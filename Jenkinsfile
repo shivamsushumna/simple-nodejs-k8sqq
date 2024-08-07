@@ -33,5 +33,5 @@ pipeline {
                     
                     // Push the Docker image to GitLab Container Registry
                     docker.withRegistry("https://${GITLAB_RE}", "${GITLAB_CREDENTIALS_ID}") {
-                        frontendImage.push()
+                        frontendImage.push
                     
